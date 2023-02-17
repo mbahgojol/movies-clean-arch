@@ -1,0 +1,44 @@
+name: movies_app
+
+command:
+  bootstrap:
+    usePubspecOverrides: true
+
+packages:
+  - libraries/**
+  - core/**
+
+scripts:
+
+  analyze:
+    run: |
+      melos exec -c 1 -- \
+        flutter analyze .
+    description: |
+      Run `dart analyze` in all packages.
+       - Note: you can also rely on your IDEs Dart Analysis / Issues window.
+  generate:
+    run: melos run generate:flutter && melos run generate:locale
+    description: Build all generated files for Dart & Flutter packages in this project.
+
+  generate:dart:
+    run: melos exec -c 1 --depends-on="build_runner" --no-flutter --ignore="riverpod_lint_flutter_test" -- "dart run build_runner build -d"
+    description: Build all generated files for Dart packages in this project.
+
+  generate:flutter:
+    run: melos exec -c 1 --depends-on="build_runner" --flutter -- "flutter pub run build_runner build -d"
+    description: Build all generated files for Flutter packages in this project.
+
+  generate:locale:
+    run: melos exec -c 1 --depends-on="build_runner" --flutter -- "flutter pub run easy_localization:generate -f keys -S assets/translations"
+    description: Build all generated files for Flutter packages in this project.
+
+  get:
+    run: melos exec -c 1 -- \
+      flutter pub get .
+    description: Build all generated files for Flutter packages in this project.
+
+  clean:
+    run: melos exec -c 1 -- \
+      flutter clean .
+    description: Build all generated files for Flutter packages in this project.
