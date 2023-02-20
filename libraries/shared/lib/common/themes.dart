@@ -3,11 +3,12 @@ import 'package:shared/common/color_schemes.dart';
 import 'package:shared/common/typography.dart';
 
 final ThemeData kLightTheme = ThemeData.light(useMaterial3: true).copyWith(
-  colorScheme: kLightColorSchemes,
+  colorScheme: kMoviesLightColorSchemes,
+  scaffoldBackgroundColor: kMoviesLightColorSchemes.primary,
   textTheme: kTextTheme.apply(
     fontFamily: 'OpenSans',
-    bodyColor: kLightColorSchemes.onBackground,
-    displayColor: kLightColorSchemes.onBackground,
+    bodyColor: kMoviesLightColorSchemes.onBackground,
+    displayColor: kMoviesLightColorSchemes.onBackground,
   ),
   dividerTheme: const DividerThemeData(
     thickness: 0.75,
@@ -27,12 +28,16 @@ final ThemeData kLightTheme = ThemeData.light(useMaterial3: true).copyWith(
       borderRadius: BorderRadius.circular(5),
     ),
     prefixStyle: kTextTheme.bodyLarge?.copyWith(
-      color: kLightColorSchemes.onBackground,
+      color: kMoviesLightColorSchemes.onBackground,
     ),
     labelStyle: kTextTheme.labelSmall?.copyWith(
-      color: kLightColorSchemes.onBackground,
+      color: kMoviesLightColorSchemes.onBackground,
     ),
   ),
+  cardTheme: CardTheme(
+      color: kMoviesLightColorSchemes.secondary,
+      elevation: 0,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5))),
   outlinedButtonTheme: OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
       padding: const EdgeInsets.symmetric(
@@ -42,8 +47,8 @@ final ThemeData kLightTheme = ThemeData.light(useMaterial3: true).copyWith(
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(5),
       ),
-      backgroundColor: kLightColorSchemes.background,
-      foregroundColor: kLightColorSchemes.onBackground,
+      backgroundColor: kMoviesLightColorSchemes.background,
+      foregroundColor: kMoviesLightColorSchemes.onBackground,
     ),
   ),
 );
