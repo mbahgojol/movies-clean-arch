@@ -1,5 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.blank.app">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
    <application
         android:label="blank_app"
         android:name="${applicationName}"

@@ -16,11 +16,13 @@ class HomePage extends StatelessWidget {
       child: Scaffold(
           resizeToAvoidBottomInset: false,
           appBar: AppBar(
-            automaticallyImplyLeading: false,
             backgroundColor: Theme.of(context).colorScheme.primary,
             title: Text(
               LocaleKeys.home_title,
-              style: Theme.of(context).textTheme.titleLarge,
+              style: Theme.of(context)
+                  .textTheme
+                  .titleLarge
+                  ?.copyWith(color: Theme.of(context).colorScheme.background),
             ).tr(),
           ),
           body: SafeArea(
@@ -49,7 +51,7 @@ class HomePage extends StatelessWidget {
                             color: Theme.of(context).colorScheme.background),
                       ).tr(),
                       const Spacer(),
-                      InkResponse(
+                      InkWell(
                         onTap: () {},
                         child: Text(
                           LocaleKeys.more,
@@ -103,7 +105,7 @@ class HomePage extends StatelessWidget {
                               .background
                               .withOpacity(0.6))),
                   const Spacer(),
-                  InkResponse(
+                  InkWell(
                     onTap: () {},
                     child: Icon(
                       Icons.more_vert,
@@ -137,6 +139,7 @@ class HomePage extends StatelessWidget {
                               ),
                             ),
                         (response) => ListView.separated(
+                          shrinkWrap: true,
                               physics: const BouncingScrollPhysics(),
                               scrollDirection: Axis.horizontal,
                               padding:
