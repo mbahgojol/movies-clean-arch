@@ -1,10 +1,11 @@
-import 'package:core/router/app_router.dart';
-import 'package:core/ui/login/bloc/login_bloc.dart';
+import 'package:core/core.dart';
 import 'package:core/ui/login/widgets/or_divider.dart';
 import 'package:core/ui/login/widgets/register_text.dart';
 import 'package:dependencies/dependencies.dart';
 import 'package:flutter/material.dart';
 import 'package:shared/shared.dart';
+
+import 'bloc/login_bloc.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);

@@ -26,7 +26,7 @@ scripts:
     description: Build all generated files for Dart packages in this project.
 
   generate:flutter:
-    run: melos exec -c 1 --depends-on="build_runner" --flutter -- "flutter pub run build_runner build -d"
+    run: melos exec -c 1 --depends-on="build_runner" --flutter -- "flutter pub run build_runner build --delete-conflicting-outputs"
     description: Build all generated files for Flutter packages in this project.
 
   generate:locale:

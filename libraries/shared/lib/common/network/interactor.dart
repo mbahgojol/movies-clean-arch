@@ -15,3 +15,33 @@ abstract class Interactor<P> {
 
   Future<void> doWork(P params);
 }
+
+abstract class ResultInteractor<R> {
+  Future<Result<R>> call() async {
+    Either<Exception, R> exceptionOrSuccess;
+    try {
+      var result = await doWork();
+      exceptionOrSuccess = right(result);
+    } on Exception catch (e) {
+      exceptionOrSuccess = left(e);
+    }
+    return optionOf(exceptionOrSuccess);
+  }
+
+  Future<R> doWork();
+}
+
+abstract class ResultInteractorWithParams<P, R> {
+  Future<Result<R>> call(P params) async {
+    Either<Exception, R> exceptionOrSuccess;
+    try {
+      var result = await doWork(params);
+      exceptionOrSuccess = right(result);
+    } on Exception catch (e) {
+      exceptionOrSuccess = left(e);
+    }
+    return optionOf(exceptionOrSuccess);
+  }
+
+  Future<R> doWork(P params);
+}

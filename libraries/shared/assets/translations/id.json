@@ -6,5 +6,61 @@
   "more": "More",
   "popular": "Popular",
   "now_playing": "Now Playing",
-  "on_tv": "On TV"
+  "on_tv": "On TV",
+  "api_key": "?api_key=81d56bc1e94b7a7533312d3cac19ac5c",
+  "divider": {
+    "or": "atau"
+  },
+  "label_phone_number_input": "Nomor HP",
+  "login": {
+    "as_well_as_agree": "layanan serta menyetujui",
+    "button_continue": "Continue",
+    "button_login_google": "Masuk dengan Google",
+    "do_not_have_account": "Belum punya akun?",
+    "i_hereby_accept": "Dengan ini saya menerima",
+    "privacy_policy": "Kebijakan Privasi",
+    "register_now": "Daftar sekarang",
+    "subtitle": "Lorem ipsum dolor sit amet",
+    "title": "Masuk",
+    "tnc": "Syarat & Ketentuan"
+  },
+  "register_option": {
+    "have_account": "Sudah punya akun?",
+    "login": "Login",
+    "subtitle": "Lorem ipsum dolor sit amet ",
+    "subtitle_register_public": "Phasellus amet mi nisl gravida. Ornare condimentum orci blandit proin nam.",
+    "subtitle_register_showroom": "Phasellus amet mi nisl gravida. Ornare condimentum orci blandit proin nam.",
+    "title": "Daftar",
+    "title_register_public": "Daftar perorangan",
+    "title_register_showroom": "Daftar sebagai showroom"
+  },
+  "register_public": {
+    "subtitle": "Lorem ipsum dolor sit amet ",
+    "title": "Daftar",
+    "subtitle_register_public": "Profil Pribadi"
+  },
+  "register_showroom": {
+    "subtitle": "Lorem ipsum dolor sit amet ",
+    "title": "Daftar",
+    "subtitle_register_showroom": "Profil Pribadi"
+  },
+  "gender": "Gender",
+  "genders": {
+    "man": "Pria",
+    "woman": "Wanita",
+    "others": "Others"
+  },
+  "label_nik": "NIK",
+  "label_full_name": "Nama Lengkap",
+  "label_name_input": "Nama",
+  "label_gender_input": "Gender",
+  "label_email_input": "Email",
+  "label_address_input": "Alamat",
+  "label_birthdate_input": "Tanggal Lahir",
+  "error": {
+    "input_phone_number_empty": "Masukkan No HP anda",
+    "input_name_empty": "Masukkan Nama anda",
+    "server": "Terjadi kesalahan dengan server, mohon coba kembali nanti",
+    "unexpected": "Terjadi kesalahan, mohon coba kembali nanti"
+  }
 }

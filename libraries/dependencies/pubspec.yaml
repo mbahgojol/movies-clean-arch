@@ -8,19 +8,21 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
+  flutter:
+    sdk: flutter
   auto_route: ^5.0.4
   chucker_flutter: ^1.4.2
   dartz: ^0.10.1
   dio: ^4.0.6
   easy_localization: ^3.0.1
-  flutter:
-    sdk: flutter
   flutter_bloc: ^8.1.2
   flutter_secure_storage: ^8.0.0
   flutter_svg: ^2.0.0+1
   freezed_annotation: ^2.2.0
   get_it: ^7.2.0
   injectable: ^2.1.0
+  json_annotation: ^4.8.0
+  cached_network_image: ^3.2.3
 
 dev_dependencies:
   flutter_test:

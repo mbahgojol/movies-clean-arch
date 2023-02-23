@@ -9,5 +9,4 @@ export 'package:shared/common/network/result.dart';
 export 'package:shared/common/themes.dart';
 export 'package:shared/common/typography.dart';
 export 'package:shared/common/utils/validators.dart';
-export 'package:shared/di/injection.dart';
 export 'package:shared/generated/codegen_loader.g.dart';

@@ -4,7 +4,7 @@ import 'package:shared/shared.dart';
 import '../dtos/login_request_dto.dart';
 import '../dtos/login_response_dto.dart';
 
-@injectable
+@lazySingleton
 class AuthDataSource {
   final Dio _dio;
 
@@ -22,8 +22,8 @@ class AuthDataSource {
       return LoginResponseDto.fromJson(data['data']);
     } on DioError {
       throw ServerError();
-    } catch (_) {
-      throw UnexpectedError();
+    } catch (e) {
+      throw UnexpectedError(e.toString());
     }
   }
 }
