@@ -37,3 +37,9 @@ flutter packages run build_runner build -d
    ```bash 
    flutter run
    ```
+
+### Build APK Android:
+
+   ```bash 
+   flutter build apk --target=lib/main_dev.dart --target-platform=android-arm64
+   ```

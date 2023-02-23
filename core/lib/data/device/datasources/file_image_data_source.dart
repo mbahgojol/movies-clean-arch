@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:dependencies/dependencies.dart';
 import 'package:flutter/services.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:shared/shared.dart';
 
 @lazySingleton
