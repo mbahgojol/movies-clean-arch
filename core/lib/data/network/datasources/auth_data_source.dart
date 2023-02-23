@@ -23,7 +23,7 @@ class AuthDataSource {
     } on DioError {
       throw ServerError();
     } catch (e) {
-      throw UnexpectedError(e.toString());
+      throw UnexpectedError(message: e.toString());
     }
   }
 }

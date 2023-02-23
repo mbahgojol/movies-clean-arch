@@ -5,7 +5,7 @@ import 'package:injectable/injectable.dart';
 
 import '../network/dtos/list_movies_response_dto.dart';
 
-@Injectable(as: HomeRepository)
+@LazySingleton(as: HomeRepository)
 class HomeRepositoryImpl extends HomeRepository {
   final HomeDataSource homeDataSource;
 

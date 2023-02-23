@@ -11,3 +11,4 @@ export 'package:flutter_svg/flutter_svg.dart';
 export 'package:freezed_annotation/freezed_annotation.dart';
 export 'package:injectable/injectable.dart';
 export 'package:json_annotation/json_annotation.dart';
+export 'package:image_picker/image_picker.dart';

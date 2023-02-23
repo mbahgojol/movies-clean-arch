@@ -13,9 +13,17 @@ const kTextTheme = TextTheme(
     fontWeight: FontWeight.w400,
     fontSize: 12,
   ),
+  titleLarge: TextStyle(
+    fontWeight: FontWeight.w700,
+    fontSize: 20,
+  ),
   titleMedium: TextStyle(
     fontWeight: FontWeight.w700,
     fontSize: 16,
+  ),
+  titleSmall: TextStyle(
+    fontWeight: FontWeight.w700,
+    fontSize: 12,
   ),
   bodyLarge: TextStyle(
     fontWeight: FontWeight.w500,

@@ -5,7 +5,7 @@ import 'package:core/domain/repositories/auth_repository.dart';
 import 'package:dependencies/dependencies.dart';
 import 'package:injectable/injectable.dart';
 
-@Injectable(as: AuthRepository)
+@LazySingleton(as: AuthRepository)
 class AuthRepositoryImpl extends AuthRepository {
   final AuthDataSource authDataSource;
   final SecureStorageHelper secureStorageHelper;
